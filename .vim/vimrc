@@ -1,0 +1,43 @@
+:set number
+:set tabstop=4
+:set softtabstop=4
+:set shiftwidth=4
+:set expandtab
+:set cursorline
+:set showcmd
+:set wildmenu
+:set showmatch
+:set mouse=a
+:syntax enable
+:filetype indent on
+
+"Change active tab
+:nnoremap <C-Up> :tabr <CR>
+:nnoremap <C-Down> :tabl <CR>
+:nnoremap <C-Left> :tabp <CR>
+:nnoremap <C-Right> :tabn <CR>
+
+"Move tabs left and right
+:nnoremap <C-S-Right> :tabm +1<CR>
+:nnoremap <C-S-Left> :tabm -1<CR>
+
+"Open a new vertically split window
+:nnoremap <C-N> :vsplit <CR>
+
+:inoremap <C-Up> <ESC> <UP> dd p <UP> i
+:inoremap <C-Down> <ESC> dd p i
+":inoremap <C-S> <ESC> :w <CR> i
+
+:inoremap <Nul> <C-n>
+
+:nnoremap j gj
+:nnoremap k gk
+:nnoremap <UP> gk
+:nnoremap <Down> gj
+:nnoremap <C-O> :mksession! <CR> :wqa <CR>
+:nnoremap <C-S> :w <CR>
+
+:set noerrorbells visualbell
+:set t_vb=
+
+au FileType python syn keyword pythonDecorator True False self
