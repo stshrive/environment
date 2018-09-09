@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+LOCAL_BIN_PATH=$(dirname $0)
+
+SCRIPTNAME="nuke_$1"
+shift 1
+
+. $LOCAL_BIN_PATH/$SCRIPTNAME $@

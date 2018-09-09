@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+set -e
+
+run_command=0
+
+
+if [ "$#" -eq 1 ]; then
+    if [ "$1" == "-f" ]; then
+        run_command=1
+    fi
+fi
+
+if [ "$run_command" == 0 ]; then
+    echo "WARNING: STOP ALL RUNNING CONTAINERS AND DELETE CACHED IMAGES? [y/n]"
+    read answer
+
+    declare -a valid=("y" "Y" "yes" "Yes" "YES")
+
+    for v in "${valid[@]}" ; do
+        if [ "$v" == "$answer" ]; then
+            run_command=1
+        fi
+    done
+fi
+
+if [ "$run_command" == 1 ]; then
+    containers=($(docker ps -aq))
+
+    for container in "${containers[@]}" ; do
+        docker stop $container
+        docker rm $container
+    done
+
+    docker image prune -af
+fi
