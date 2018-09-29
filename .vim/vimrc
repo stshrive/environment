@@ -40,4 +40,10 @@
 :set noerrorbells visualbell
 :set t_vb=
 
+"Prevent vim from creating swap files.
+:set noswapfile
+:set nobackup
+:set nowritebackup
+
+
 au FileType python syn keyword pythonDecorator True False self
