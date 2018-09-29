@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+find . -name .ipynb_checkpoints | while read cache; do
+    echo "Deleting: $cache"
+    rm -rf $cache
+done
