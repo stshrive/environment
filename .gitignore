@@ -2,3 +2,6 @@
 !.gitignore
 !.vim/
 !.bin/
+!.profile
+!.bash_profile
+!.bashrc
