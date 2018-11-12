@@ -11,6 +11,10 @@
 :syntax enable
 :filetype indent on
 
+"Show invisible characters
+:set listchars=tab:→\ ,eol:¬,trail:·
+:set list
+
 "Change active tab
 :nnoremap <C-Up> :tabr <CR>
 :nnoremap <C-Down> :tabl <CR>
