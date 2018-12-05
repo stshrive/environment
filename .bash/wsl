@@ -1,0 +1,5 @@
+# Setup Docker in WSL environment variables
+export DISPLAY=:0
+export DOCKER_CHANNEL=stable
+export DOCKER_COMPOSE_VERSION=1.22.0
+export DOCKER_HOST=tcp://0.0.0.0:2375

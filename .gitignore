@@ -1,8 +1,11 @@
 *
 !.gitignore
-!.vim/
+
+!.bash/
 !.bin/
 !.tmux/
-!.profile
+!.vim/
+
 !.bash_profile
 !.bashrc
+!.profile
