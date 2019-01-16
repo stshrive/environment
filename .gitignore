@@ -5,6 +5,7 @@
 !.bin/
 !.tmux/
 !.vim/
+!.wsl-docker/
 
 !.bash_profile
 !.bashrc
