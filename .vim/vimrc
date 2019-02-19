@@ -54,3 +54,4 @@ au FileType python syn keyword pythonDecorator True False self
 
 " *.map.txt file settings
 au BufRead,BufNewFile *.map.txt set filetype=maptxt
+au BufRead,BufNewFile *dockerfile* set filetype=dockerfile
