@@ -1,3 +1,3 @@
 # Customize VIM settings
 export VIMINIT='source $VIMRCLOCATION'
-export VIMRCLOCATION='~/.vim/vimrc'
+export VIMRCLOCATION='~/.bash/profiles/vim/vimrc'
