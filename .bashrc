@@ -37,5 +37,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.bin:$PATH"
 
 while IFS= read -r line; do
-    source ~/.$line/.bashrc
+    source ~/.bash/profiles/$line/.bashrc
 done< <(cat ~/.bash/.profiles)
