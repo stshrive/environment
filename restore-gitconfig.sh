@@ -1,7 +1,7 @@
 ${GIT_USER:?"value not set or empty"}
 ${GIT_MAIL:?"value not set or empty"}
 
-cat << EOF > ~/.gitconfig
+cat << 'EOF' > ~/.gitconfig
 [user]
     name = ${GIT_USER}
     email = ${GIT_MAIL}@users.noreply.github.com
@@ -17,4 +17,4 @@ cat << EOF > ~/.gitconfig
         autoclrf = true
 [url "git@github.com:"]
         insteadOf = https://github.com/
-EOF
+'EOF'
